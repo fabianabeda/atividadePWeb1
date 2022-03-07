@@ -4,7 +4,9 @@ class contaEspecial extends Conta{
     constructor(numero: string, saldo: number){
         super(numero, saldo);
     }
-    
+    debitar(valor: number): void {
+        this._saldo -= valor;
+    }
     get contaEspecial() {
         return this._contaEspecial                                          ;
     }
